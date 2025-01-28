@@ -27,7 +27,7 @@ fn main() {
     let order_quantity: i32 = order_quantity.trim().parse().expect("Please enter a valid number");
     
     // Declare a variable to store the total cost
-    let mut total_cost = 0;
+    let mut total_cost = 0;43       
 
     // CALCULATE THE COST OF food_order
     if food_order == "P" {
