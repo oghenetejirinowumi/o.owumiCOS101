@@ -10,7 +10,7 @@ fn main() {
         name:String::from("Ebibiong Jessica"),
         age:25
     };
-    println!("Nmae = {} \n", emp1.name);
+    println!("Name = {} \n",emp1.name);
     println!("Company = {} \n", emp1.company);
-    println!("Age = {}", emp1.age);
+    println!("Age = {}",emp1.age);
 }

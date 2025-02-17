@@ -8,9 +8,7 @@ fn main() {
     // input name
     println!("\nOWUMI OGHENETEJIRIN GREGORY");
     let mut name = String::new();
-        io::stdin()
-        .read_line(&mut name)
-        .expect("Failed to read input");
+    io::stdin().read_line(&mut name).expect("Failed to read input");
     println!("Your name is: {}", name.trim());
 
     // input age

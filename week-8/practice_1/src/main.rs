@@ -1,11 +1,12 @@
 use std::io::Write;
 
 fn main() {
-    let _announce = "Week 9 - Rust File Input & Output\n";
+    let announce = "Week 9 - Rust File Input & Output\n";
     let dept = "Department of Computer Science";
 
-    let mut file = std::fs::File::create("data.text").expect("create failed");
-    file.write_all("Welcome to Rust Programming\n".as_bytes()).expect("Write failed");
-    file.write_all(dept.as_bytes()).expect("write failed");
+    let mut file = std::fs::File::create("data.txt").expect("CREATE FAILED");
+    file.write_all("Welcome to Rust Programming\n".as_bytes()).expect("WRITE FAILED");
+    file.write_all(announce.as_bytes()).expect("WRITE FAILED");
+    file.write_all(dept.as_bytes()).expect("WRITE FAILED");
     println!("\nData written to file.");
 }
